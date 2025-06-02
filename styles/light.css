@@ -32,17 +32,5 @@
   --secondary-color: var(--color-black, #35343040);
     background-image: var(--bg-image);
     background-color: #fff1f7;
-
-    @media (width <= 768px) {
-      .header__title {
-        color: var(--heading-text);
-        text-shadow: 4px 4px 0px var(--accent-color);
-      }
-
-      .footer__title {
-        color: var(--heading-text);
-        text-shadow: 2px 2px 0px var(--accent-color);
-      }
-    }
 }
 
