@@ -27,7 +27,7 @@
   --border-color: #ff0070;
   --border-bottom: #f1b2ce;
   --bg-image: url(../images/cover-image-dark.png);
-  --secondary-color: var(--color-purple, #ff007040);
+  --secondary-color: var(--color-purple, rgba(255, 0, 112, 0.4));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,7 +48,7 @@
     --title-decor: var(--title-shadow);
     --rec-color: var(--title-shadow);
     --bg-image: url(../images/cover-image-dark.png);
-    --secondary-color: var(--color-purple, #ff007040);
+    --secondary-color: var(--color-purple, rgba(255, 0, 112, 0.4));
     --font-family: "IBM Plex Mono", monospace;
 
     .decor {

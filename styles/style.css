@@ -9,7 +9,7 @@
   background-attachment: fixed;
   background-position: center;
   transition-duration: var(--transition-duration);
-  font-family: var(--font-family);
+  font-family: var(--font-family, monospace);
   font-size: 18px;
   font-weight: 400;
 }
@@ -65,7 +65,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--secondary-color, #ff007040);
+  border: 1px solid var(--secondary-color, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button:focus {
@@ -187,7 +187,7 @@
 
 .section__article-text-link {
   text-decoration: none;
-  text-shadow: 3px 2px var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
 .section__article-text-link:hover {
@@ -285,14 +285,12 @@
 
 .section__article-list {
   display: flex;
-
   justify-content: flex-start;
   margin-block-end: 80px;
   gap: 20px;
 }
 
-.section:first-of-type,
-.section:nth-of-type(3) {
+.section:first-of-type {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -378,19 +376,6 @@
     flex-wrap: wrap;
   }
 
-  .section:first-of-type .section__title,
-  .section:nth-of-type(3) .section__title {
-    max-width: 230px;
-  }
-
-  .section:first-of-type .section__article-list,
-  .section:nth-of-type(3) .section__article-list {
-    width: 64%;
-  }
-  .section:nth-of-type(2) .section__article-item {
-    flex: 1 0 auto;
-    width: 100%;
-  }
 }
 
 @media (width < 768px) {
@@ -476,36 +461,6 @@
         max-width: none;
     }
 
-  .section:nth-of-type(2) .section__title {
-    width: 100%;
-  }
-
-  .section:nth-of-type(2) .section__article-list {
-    justify-content: space-between;
-    margin-block-end: 50px;
-    gap: 20px;
-    width: 97%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section:nth-of-type(2) .section__article-item {
-    flex: 1 0 auto;
-    width: 103%;
-  }
-
-  .section:first-of-type .section__title,
-  .section:nth-of-type(3) .section__title {
-    width: 100%;
-    margin-bottom: 20px;
-    max-width: 400px;
-  }
-
-  .section:first-of-type .section__article-list,
-  .section:nth-of-type(3) .section__article-list {
-    width: 100%;
-    margin-block-end: 50px;
-  }
 
   .section:last-of-type .section__image {
     width: 100%;
@@ -518,7 +473,7 @@
 
   .section:last-of-type {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 10px;
   }
 
