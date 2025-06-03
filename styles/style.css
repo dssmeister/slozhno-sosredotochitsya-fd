@@ -375,7 +375,6 @@
     margin-block-end: 80px;
     flex-wrap: wrap;
   }
-
 }
 
 @media (width < 768px) {
@@ -461,7 +460,6 @@
         max-width: none;
     }
 
-
   .section:last-of-type .section__image {
     width: 100%;
     height: auto;
@@ -484,5 +482,3 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
-
-
